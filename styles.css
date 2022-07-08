@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    /* site-wide variables */
+    --section-width: 100vw;
+    --primary-color: #1F2937;
+    --secondary-color: #F9FAF8;
+    --tertiary-color: #E5E7EB;
+    --quaternary-color: #3882F6;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: var(--section-width);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px 30px 25px;
+}
+
+.nav__menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 5px 0px 5px;
+    color: var(--tertiary-color);
+}
+.jumbotron{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 25px 60px 25px;
+}
+.jumbotron__text{
+    padding: 0px 15px 0px 0px;
+}
+.jumbotron__text > button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    color: white;
+    background-color: var(--quaternary-color);
+}
+.jumbotron img{
+    width: 350px;
+    height: auto;
+}
+
+main{
+    width: var(--section-width);
+}
+.content{
+    text-align: center;
+    padding: 40px 35px 60px 35px;
+}
+.content__cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card__image img{
+    border: 3px solid var(--quaternary-color);
+    border-radius: 15px;
+    width: 120px;
+    height: auto;
+}
+.card__text{
+    padding: 0px 10px 0px 10px;
+}
+
+#quote{
+    width: var(--section-width);
+    background-color: var(--tertiary-color);
+}
+.quote{
+    padding: 75px 40px 75px 40px;
+}
+.quote__text > p{
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+.quote__text > h3{
+    text-align: right;
+    margin-top: 0;
+}
+
+#cta{
+    width: var(--section-width);
+}
+.cta{
+    padding: 40px 35px 40px 35px;
+    margin: 40px 35px 40px 35px;
+    background-color: var(--quaternary-color);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cta__text{
+    font-size: 24px;
+    color: #fff;
+}
+.cta__text > h4{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.cta__text > p{
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.cta__button > button{
+    border: 1px solid #fff;
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    color: white;
+    background-color: transparent;
+}
+
+footer{
+    width: var(--section-width);
+    background-color: var(--primary-color);
+}
+.footer{
+    padding: 40px 35px 40px 35px;
+    color: white;
+    text-align: center;
+}
